@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFEFE"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@android:drawable/arrow_down_float" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@android:drawable/arrow_up_float" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@android:drawable/ic_delete" />
+
+</LinearLayout>

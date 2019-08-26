@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuItem">
+        <attr name="menuName" format="reference|string" />
+        <attr name="price" format="reference|integer" />
+    </declare-styleable>
+    <declare-styleable name="CurrentSelectedMenu"></declare-styleable>
+    <declare-styleable name="DayHistoryListLayout"></declare-styleable>
+</resources>

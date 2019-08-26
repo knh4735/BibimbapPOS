@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nagion.myapplication.SalesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/preMonth"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_media_rew"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="35dp"/>
+
+        <Button
+            android:id="@+id/nextMonth"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_media_ff"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginTop="2dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:listSelector="@drawable/gridview_selector">
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:text="합계" />
+
+        <TextView
+            android:id="@+id/monthTotal"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:text="현금" />
+
+        <TextView
+            android:id="@+id/monthCash"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:text="카드" />
+
+        <TextView
+            android:id="@+id/monthCard"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backToList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:background="#F3EEEE"
+        android:text="뒤로" />
+
+</LinearLayout>
